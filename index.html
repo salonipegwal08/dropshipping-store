@@ -5,63 +5,160 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>A & S Collection</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #f2f2f2; margin: 0; padding: 0; }
-    header { background-color: #222; color: #fff; padding: 1rem; text-align: center; }
-    .products { display: flex; flex-wrap: wrap; justify-content: center; padding: 1rem; }
-    .card { background: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 1rem; padding: 1rem; width: 250px; text-align: center; }
-    .card img { max-width:100%; height:auto; border-radius:8px; }
-    .btn { background:#28a745; color:#fff; padding:10px 15px; border:none; border-radius:5px; margin-top:10px; cursor:pointer; text-decoration:none; display:inline-block;}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+      margin: 0;
+      padding: 0;
+    }
+
+    .cod-banner {
+      background-color: #ffc107;
+      color: #000;
+      padding: 10px 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.1rem;
+      font-weight: 300;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      margin: 1rem;
+      padding: 1rem;
+      width: 260px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      margin: 10px 0 5px;
+      color: #333;
+    }
+
+    .card h5 {
+      font-size: 0.85rem;
+      font-weight: normal;
+      color: #666;
+      margin: 5px 0 10px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #111;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      background: #28a745;
+      color: #fff;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      margin-top: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #218838;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Cash on Delivery Banner -->
+  <div class="cod-banner">🚚 Cash on Delivery Also Available – Order Now via WhatsApp!</div>
+
+  <!-- Header -->
   <header>
     <h1>A & S Collection</h1>
     <p>Your Style, Our Passion</p>
   </header>
+
+  <!-- Products Section -->
   <section class="products">
 
-    <!-- 10 Placeholder Products -->
     <div class="card">
-  <img src="https://i.ibb.co/Pvv14ksy/SHREE-GANESH-JI.webp" alt="Shree Ganesh Ji">
-  <h3>Shree Ganesh Idol</h3>
-      <h5>Ganesh ji murti | 4 inch | Ganesh Murti |Ganpati idol |Ganpati Murti for Gift, Car Dashboard, Pooja, Temple, Office | Ganesh statue | Lord Ganesha Resin Stone Idol, Vinayaka Statue, Ganpati Murti, White and Golden, Decorative Statue, Ganesh Ji ki Stone Murti, Ganpati Idol, Ganesha Statue Ganpati</h5>
-  <p>₹249</p>
-  <a class="btn" href="https://wa.me/919588756955?text=I'm interested in Shree Ganesh Idol (₹299)">Order Now</a>
-</div> 
-
-    <div class="card">
-  <img src="https://i.ibb.co/MTvz8mM/adiyogi-rudraksh-mala-shiva-statue.webp" alt="Adiyogi Rudraksh Shiva Statue">
-  <h3>Adiyogi Rudraksh Shiva Statue</h3>
-      <h5>Adiyogi Rudraksha Mala Shiva Statue for Pooja & Gift, Mahadev Murti, Idol, Lord Adiyogi Shankara for Home & Office Decor (ADIYOGI JI in Black)</h5>
-  <p>₹220</p>
-  <a class="btn" href="https://wa.me/919588756955?text=I'm interested in Adiyogi Rudraksh Shiva Statue (₹299)">Order Now</a>
-</div>
-
+      <img src="https://i.ibb.co/Pvv14ksy/SHREE-GANESH-JI.webp" alt="Shree Ganesh Ji">
+      <h3>Shree Ganesh Idol</h3>
+      <h5>Ganesh ji murti | 4 inch | Ganpati Murti for Gift, Car, Temple | White and Golden Decorative Idol</h5>
+      <p>₹249</p>
+      <a class="btn" href="https://wa.me/919588756955?text=I'm interested in Shree Ganesh Idol (₹249)">Order Now</a>
+    </div> 
 
     <div class="card">
-  <img src="https://i.ibb.co/RfHVHhy/shree-ganesh-ji-sitting-with-wooden-temple.webp" alt="Ganesh Ji with Wooden Temple">
-  <h3>Ganesh Ji Sitting with Wooden Temple</h3>
-      <h5>Phirki Studio Lord Ganesha Idol With Wooden ShubhLabh Temple for Home Decor, Car Dashboard Decorative Showpiece - 10 cm</h5>
-  <p>₹299</p>
-  <a class="btn" href="https://wa.me/919588756955?text=I'm interested in Ganesh Ji Sitting with Wooden Temple (₹299)">Order Now</a>
-</div>
+      <img src="https://i.ibb.co/MTvz8mM/adiyogi-rudraksh-mala-shiva-statue.webp" alt="Adiyogi Rudraksh Shiva Statue">
+      <h3>Adiyogi Rudraksh Shiva Statue</h3>
+      <h5>Mahadev Murti with Rudraksha Mala | Black Adiyogi Statue for Home & Office Decor</h5>
+      <p>₹220</p>
+      <a class="btn" href="https://wa.me/919588756955?text=I'm interested in Adiyogi Rudraksh Shiva Statue (₹220)">Order Now</a>
+    </div>
 
-   <div class="card">
-  <img src="https://i.ibb.co/v45cvLGs/sitting-hanuman-ji.webp" alt="Sitting Hanuman Ji Idol">
-  <h3>Sitting Hanuman Ji Idol</h3>
-     <h5>Siting Hanuman Ji Murti for Car Dashboard, Lord Hanuman Idol Statue for Home Decoration and Puja Negative Energy/for Good Luck, Success and Prosperity Resin (Black)</h5>
-  <p>₹279</p>
-  <a class="btn" href="https://wa.me/919588756955?text=I'm interested in Sitting Hanuman Ji Idol (₹299)">Order Now</a>
-</div>
     <div class="card">
-  <img src="https://i.ibb.co/vxdjcqJT/silver-plated-ganesh-ji.webp" alt="Silver Plated Ganesh Ji">
-  <h3>Silver Plated Ganesh Ji</h3>
-      <h5>l b Silver Plated Ganesh Idol for Car Dashboard God Ganesha Idol for Home Decor Ganpati for Gift 3.5 inches (Silver)</h5>
-  <p>₹239</p>
-  <a class="btn" href="https://wa.me/919588756955?text=I'm interested in Silver Plated Ganesh Ji (₹299)">Order Now</a>
-</div>
+      <img src="https://i.ibb.co/RfHVHhy/shree-ganesh-ji-sitting-with-wooden-temple.webp" alt="Ganesh Ji with Wooden Temple">
+      <h3>Ganesh Ji with Wooden Temple</h3>
+      <h5>Ganesh Idol With Mini Wooden Temple | For Home Decor & Car Dashboard – 10 cm</h5>
+      <p>₹299</p>
+      <a class="btn" href="https://wa.me/919588756955?text=I'm interested in Ganesh Ji with Wooden Temple (₹299)">Order Now</a>
+    </div>
 
+    <div class="card">
+      <img src="https://i.ibb.co/v45cvLGs/sitting-hanuman-ji.webp" alt="Sitting Hanuman Ji Idol">
+      <h3>Sitting Hanuman Ji Idol</h3>
+      <h5>Lord Hanuman Murti for Dashboard, Home & Office | Black Resin | Symbol of Strength & Success</h5>
+      <p>₹279</p>
+      <a class="btn" href="https://wa.me/919588756955?text=I'm interested in Sitting Hanuman Ji Idol (₹279)">Order Now</a>
+    </div>
 
+    <div class="card">
+      <img src="https://i.ibb.co/vxdjcqJT/silver-plated-ganesh-ji.webp" alt="Silver Plated Ganesh Ji">
+      <h3>Silver Plated Ganesh Ji</h3>
+      <h5>3.5" Silver Plated Ganesh Idol | For Car, Pooja Room & Gifting | Ganpati Decorative Statue</h5>
+      <p>₹239</p>
+      <a class="btn" href="https://wa.me/919588756955?text=I'm interested in Silver Plated Ganesh Ji (₹239)">Order Now</a>
+    </div>
 
   </section>
 </body>
