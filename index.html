@@ -307,6 +307,18 @@
       <img src="https://i.ibb.co/W5GpJns/payment-methods.png" alt="Payments">
     </div> -->
   </footer>
+<script>
+  const searchInput = document.querySelector('input[type="text"]');
+  const cards = document.querySelectorAll('.card');
+
+  searchInput.addEventListener('input', () => {
+    const val = searchInput.value.toLowerCase();
+    cards.forEach(card => {
+      const title = card.querySelector('h3').innerText.toLowerCase();
+      card.style.display = title.includes(val) ? 'block' : 'none';
+    });
+  });
+</script>
 
 </body>
 </html>
