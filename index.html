@@ -157,6 +157,24 @@
   font-size: 16px;
 }
 
+/* ye niche wale enable krne h  */
+<style>
+  a.btn[href^="https://wa.me/"] {
+    display: none !important;
+  }
+
+  .floating-whatsapp {
+    display: none !important;
+  }
+</style>
+<style>
+  a.btn[href^="https://wa.me/"] {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
   </style>
 </head>
 <body>
@@ -231,7 +249,7 @@
       <h3>Shree Ram Mandir with LED Lights</h3>
       <h5>LED Mandir Lights | Decorative Strip for Temples and Home Decor | Bright and Long-Lasting</h5>
       <p>₹319</p>
-      <a class="btn" href="https://wa.me/919588756955?text=I'm interested in Mandir Lights (₹149)">Order Now</a>
+      <a class="btn" href="https://wa.me/919588756955?text=I'm interested in Mandir Lights (₹319)">Order Now</a>
     </div>
 
     <div class="card">
@@ -261,7 +279,7 @@
   <h3>Shiv Backflow Incense Fountain</h3>
   <h5>Lord Shiva Smoke Fountain | Backflow Incense Holder for Meditation & Decor</h5>
   <p>₹249</p>
-  <a class="btn" href="https://wa.me/919588756955?text=I'm interested in Shiv Backflow Incense Fountain (₹299)">Order Now</a>
+  <a class="btn" href="https://wa.me/919588756955?text=I'm interested in Shiv Backflow Incense Fountain (₹249)">Order Now</a>
 </div>
 <div class="card">
   <img src="https://i.ibb.co/XrBn8QxM/ram-darbar-removebg-preview.png" alt="Ram Darbar Murti">
@@ -342,12 +360,21 @@
     <li>✔️ WhatsApp Support + COD Available</li>
   </ul>
 </section>
+<section style="padding: 2rem; background: #f8f9fa;">
+  <h2 style="text-align:center;">Frequently Asked Questions</h2>
+  <ul style="max-width: 800px; margin: auto; text-align: left; color: #555;">
+    <li><strong>Q: How to place an order?</strong><br>A: Just click on “Order Now” button and WhatsApp will open with the product details.</li>
+    <li><strong>Q: How long does delivery take?</strong><br>A: We usually deliver within 3–7 days across India.</li>
+    <li><strong>Q: Is Cash on Delivery available?</strong><br>A: Yes, COD is available on most orders.</li>
+  </ul>
+</section>
+
 
   <!-- Footer -->
   <footer>
     <h3>About A & S Collection</h3>
     <p>We are a small Indian business offering hand-picked religious idols and home decor items at affordable prices. Trusted by 1000+ happy customers.</p>
-    <p>📍 Based in INDIA | 📞 +91-9588756955</p>
+    <p>📍 Based in INDIA |</p>
     <!-- <div class="payment-icons">
       <img src="https://i.ibb.co/W5GpJns/payment-methods.png" alt="Payments">
     </div> -->
@@ -365,6 +392,12 @@
       card.style.display = title.includes(val) ? 'block' : 'none';
     });
   });
+  @media (max-width: 768px) {
+  .floating-whatsapp {
+    bottom: 80px; /* so it doesn’t block add to cart buttons */
+  }
+}
+
 </script>
 <!-- Before </body> -->
 <script>
